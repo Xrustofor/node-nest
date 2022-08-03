@@ -4,12 +4,12 @@ export class ProductModel {
 	title: string;
 	price: number;
 	oldPrice: number;
-	credit: number;
-	calculatedRating: number;
+	credite: number;
+	calculateRating: number;
 	description: string;
 	advantages: string;
 	disAdvantages: string;
-	catigories: string[];
+	catigories: [];
 	tags: string;
 	characteristics: {
 		[key: string]: string;
