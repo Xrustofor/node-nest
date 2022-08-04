@@ -5,7 +5,7 @@ export const getMongoConfig = async (configService: ConfigService): Promise<Type
 	return {
 		uri: getMongoString(configService),
 		...getMongoOptions()
-	};
+	}
 };
 
 const getMongoString = (configService: ConfigService) => 
@@ -23,6 +23,5 @@ const getMongoString = (configService: ConfigService) =>
 
 const getMongoOptions = () => ({
 	useNewUrlParser: true,
-	useCreateIndex: true,
 	useUnifiedTopology: true,
 });
