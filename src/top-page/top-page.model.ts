@@ -23,7 +23,6 @@ export class HhData {
 }
 
 export class TopPageAdvantage {
-
 	@prop()
 	title: string;
 
@@ -37,8 +36,11 @@ export class TopPageModel extends TimeStamps {
 	@prop({enum: TopLevelCategory})
 	firstCategory: TopLevelCategory;
 
-	@prop({ unique: true })
+	@prop()
 	secondCategory: string;
+
+	@prop({ unique: true })
+	alias: string;
 	
 	@prop()
 	title: string;

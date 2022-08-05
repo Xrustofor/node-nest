@@ -5,7 +5,7 @@ export const getMongoConfig = async (configService: ConfigService): Promise<Type
 	return {
 		uri: getMongoString(configService),
 		...getMongoOptions()
-	}
+	};
 };
 
 const getMongoString = (configService: ConfigService) => 
