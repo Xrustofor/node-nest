@@ -48,7 +48,7 @@ describe('AppController (e2e)', () => {
 			.expect(400)
 			.then(({body}: request.Response) => {
 				console.log(body);
-			})
+			}) 
 	});
 
   it('/review/byProduct/:productId (GET) - success', () => {
