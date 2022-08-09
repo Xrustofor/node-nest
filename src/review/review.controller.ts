@@ -11,8 +11,9 @@ import {
 	UsePipes,
 	ValidationPipe
 } from '@nestjs/common';
-import { JwtAuthGurd } from 'src/auth/guards/jwt.guard';
-import { UserEmail } from 'src/decorators/user-email.decorator';
+
+import { JwtAuthGurd } from '../auth/guards/jwt.guard';
+import { UserEmail } from '../decorators/user-email.decorator';
 import { CreateReviewDto } from './dto/create-rewiev.dto';
 import { REVIEW_NOT_FOUND } from './review.constans';
 import { ReviewService } from './review.service';
